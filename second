@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+int x,y,z;
+char a,b,c;
+x = 100;
+y = 200;
+z = (x+y) / 2;
+a = 'P';
+b = 'X';
+c = 'z';
+printf ("X value=%d\n",x);
+printf ("Y value=%d\n",y);
+printf ("Z value=%d\n",z);
+printf("A value=%c\n",a);
+printf("B value=%c\n",b);
+printf("C value=%c\n",c);
+return 0;
+}
+ 
