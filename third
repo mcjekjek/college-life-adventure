@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main () {
+    char code1, code2, code3;
+    float price1, price2, price3;
+    code1= 'A';
+    code2= 'B';
+    code3= 'C';
+    price1= 1000;
+    price2= 5975.90;
+    price3= 900.25;
+    
+    // code1= Bag, 1000
+    //code2= Cabinet,5975.90
+    //code3= Jeans, 900.25
+    printf("Code\tDescription\tPrice\n");
+    printf("%c\t\tBag\t\t\t%.2f\t\n",code1,price1);
+    printf("%c\t\tCabinet\t\t%.2f\n",code2,price2);
+    printf("%c\t\tJeans\t\t%.2f\n",code3,price3);
+    
+    return 0;
+    
+}
