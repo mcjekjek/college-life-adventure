@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+
+int main() {
+    char f1, f2;
+    
+    f1 = 'F';
+    f2 = 'f';
+    
+    printf("First Letter: %c\n", f1);
+    printf("Second Letter: %c\n", f2);
+    return 0;
+}
