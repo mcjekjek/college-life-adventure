@@ -1,0 +1,18 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int n1,n2,n3,prod=0;
+   printf("Input Three (3) Numbers:");
+   scanf("%d",&n1);
+   scanf("%d",&n2);
+   scanf("%d",&n3);
+   prod= n1 * n2 * n3;
+   
+   printf("The Three (3) Numbers Are: %d %d %d", n1,n2,n3);
+   printf("\nThe Product Of The Three (3) Numbers are: %d", prod);
+   printf("\n\nMONROID, JAKE A. BSIS 1-A2");
+
+
+    return 0;
+}
