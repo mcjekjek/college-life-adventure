@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main () {
+   const float metric_ton_to_ounces = 35273.92;
+   float cereal_ounce;
+   float cereal_metric_ton;
+   float box_needed;
+    
+  
+    printf("Input the weight of the cereal box (in ounces): ");
+    scanf("%f",&cereal_ounce);
+    
+      cereal_metric_ton = cereal_ounce / metric_ton_to_ounces;
+      box_needed = metric_ton_to_ounces / cereal_ounce;
+      
+    printf("\nWeight of the cereal box in metric tons: %f",cereal_metric_ton);
+    printf("\nNumber of boxes needed to yield one metric ton of cereal: %f",box_needed);
+    
+    return 0;
+}
