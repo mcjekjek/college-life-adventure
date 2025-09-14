@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main () {
+const float metric_ton_to_ounces = 35273.92;
+float bfast_ounces;
+float bfast_tons;
+int neededboxes;
+
+printf("Input the weight of the breakfast cereal (ounces):  ");
+scanf("%f", &bfast_ounces);
+
+bfast_tons = metric_ton_to_ounces / bfast_ounces;
+neededboxes = metric_ton_to_ounces / bfast_ounces;
+
+printf("\nWeight of the breakfast cereal (ounces):%.2f", bfast_ounces);
+printf("\nWeight of the breakfast cereal (tons):%.2f", bfast_tons);
+printf("\nBoxes needed to yield one metric tons: %d", neededboxes);
+
+return 0;
+
+}
+
+
+
