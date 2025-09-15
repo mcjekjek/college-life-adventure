@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main () {
+    int pounds;
+    int ounces;
+    float total_pounds, total_kg;
+    int kilograms;
+    double grams;
+
+printf("Enter weight (pounds):  ");
+scanf("%d",&pounds);
+printf("\nEnter weight (ounces):  ");
+scanf("%d",&ounces);
+
+total_pounds = pounds + (ounces / 16);
+total_kg = total_pounds / 2.2046;
+kilograms = (int) total_kg;
+grams = (total_kg - kilograms)*1000;
+printf("\n Input pounds: %d",pounds);
+printf("\n Input ounces: %d", ounces);
+printf("\n -----Equivalent Weight----- ");
+printf("\n Kilograms: %d",kilograms);
+printf("\n Grams: %.2f",grams);
+
+return 0;
+}
