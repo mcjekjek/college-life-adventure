@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main () {
+float prevAnnualSalary;
+float retroactivePay;
+float newAnnualSalary;
+float newMonthlySalary;
+const float pay_increase = 0.076;
+
+printf("Enter previous annual salary:  ");
+scanf("%f", &prevAnnualSalary);
+
+retroactivePay = (prevAnnualSalary * pay_increase) / 2; 
+newAnnualSalary = prevAnnualSalary + (prevAnnualSalary * pay_increase);
+newMonthlySalary = newAnnualSalary / 12;
+
+printf("\n This is your previous annual salary:%.2f", prevAnnualSalary);
+printf("\n This is your retroactive pay due:%.2f", retroactivePay);
+printf("\n This is your new monthly salary:%.2f", newMonthlySalary);
+printf("\n This is your new annual salary:%.2f", newAnnualSalary);
+
+return 0; 
+}
+
