@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int convert_cm ( float inch, float inch_to_cm) { 
+    return inch * inch_to_cm;
+}
+
+void display ( float cm) {
+    printf("\nConverted measure (centimeters): %.2f",cm);
+}
+
+int main (void) {
+    float inch;
+    float inch_to_cm = 2.54;
+    float cm=0;
+    
+    printf("\nEnter measure (inches): ");
+    scanf("%f", &inch);
+    
+    cm = convert_cm (inch, inch_to_cm);
+    
+    display(cm);
+    
+    return 0;
+}
