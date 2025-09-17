@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void read(int *a, int *b, int *c) {
+    printf("\nEnter three (3) integers: ");
+    scanf("%d %d %d", a, b, c); 
+}
+
+void order(int a, int b, int c) {
+    printf("\nHere are the integers in order: %d %d %d", a, b, c);
+}
+
+void reverse(int a, int b, int c) {
+    printf("\nHere are the integers in reverse: %d %d %d", c, b, a);
+}
+
+int main(void) {
+    int a, b, c;
+
+    read(&a, &b, &c);
+    reverse(a, b, c);
+    order(a, b, c);
+
+    return 0;
+}
