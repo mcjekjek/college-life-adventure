@@ -1,0 +1,55 @@
+#include <stdio.h>
+void month_of_year (int month){
+
+if (month==1)
+printf("\nthis month is january");
+
+else if (month==2)
+printf("\nthis month is february");
+
+else if (month==3)
+printf("\nthis month is march");
+
+else if (month==4)
+printf("\nthis month is april");
+
+else if (month==5)
+printf("\nthis month is may");
+
+else if (month==6)
+printf("\nthis month is june");
+
+else if (month==7)
+printf("\nthis month is july");
+
+else if (month==8)
+printf("\nthis month is august");
+
+else if (month==9)
+printf("\nthis month is september");
+
+else if (month==10)
+printf("\nthis month is october");
+
+else if (month==11)
+printf("\nthis month is november");
+
+else if (month==12)
+printf("\nthis month is december");
+
+else
+printf("\ninvalid");
+
+}
+
+int main () {
+
+int month;
+
+printf("\ninput an integer from 1-12: ");
+scanf("%d",&month);
+
+month_of_year(month);
+
+return 0;
+}
