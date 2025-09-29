@@ -1,0 +1,43 @@
+#include <stdio.h> 
+
+int main () {
+    float angle;
+    
+    printf("\nEnter Angle: ");
+    scanf("%f", &angle);
+    
+    if (angle == 0 || angle == 360)
+    printf("\nThe Angle Lies on the Positive X-Axis");
+    
+    else if (angle == 90)
+    printf("\nThe Angle Lies on the Positive Y-Axis");
+    
+    else if(angle == 180)
+    printf("\nThe Angle Lies on the Negative X-Axis");
+    
+    else if(angle == 270)
+    printf("\nThe Angle Lies on the Negative Y-Axis");
+    
+    else if (angle > 0 && angle < 90)
+    printf("\nThe Angle Lies on Quadrant I");
+    
+    else if(angle > 90 && angle < 180)
+    printf("\nThe Angle Lies on Quadrant II");
+    
+    else if(angle > 180 && angle < 270)
+    printf("\nThe Angle Lies on Quadrant III");
+    
+    else if (angle > 270 && angle < 360)
+    printf("\nThe Angle Lies on Quadrant IV");
+    
+    else 
+    printf("\nInvalid Angle");
+    
+    
+    
+    
+    
+    
+    return 0;
+    
+}
