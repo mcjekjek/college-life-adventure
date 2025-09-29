@@ -3,6 +3,7 @@
 int main () {
     float angle;
     
+    do {
     printf("\nEnter Angle: ");
     scanf("%f", &angle);
     
@@ -33,7 +34,7 @@ int main () {
     else 
     printf("\nInvalid Angle");
     
-    
+    } while(angle > 0 || angle < 360);
     
     
     
