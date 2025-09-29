@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main () {
+
+char sign_color;
+
+do {
+
+printf("\nEnter Traffic Light Color (R,G,Y): ");
+scanf(" %c", &sign_color);
+
+sign_color = toupper(sign_color);
+
+
+switch (sign_color) {
+    case 'R':
+    printf("\nTraffic light signals to stop");
+    break;
+    
+    case 'G':
+    printf("\nTraffic light signals to Go");
+    break;
+    
+    case 'Y':
+    printf("\nTraffic light signals that it is going to change to red light in 6 seconds");
+    break;
+    
+    default:
+    printf("\nInvalid traffic light color entered, try again.\n");
+} 
+    
+} while(sign_color !='R' && sign_color !='Y' && sign_color !='G');
+    return 0;
+}
