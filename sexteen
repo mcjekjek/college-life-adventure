@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+void inputDate (int *cday, int *cmonth, int *cyear, int *bday, int *bmonth, int *byear){
+    printf("Enter Current Date (MM DD YY): ");
+    scanf(" %d %d %d", cmonth, cday, cyear);
+    printf("Enter Birth Date (MM DD YY): ");
+    scanf(" %d %d %d", bmonth, bday, byear);
+}
+
+
+int calcAge( int cday, int cmonth, int cyear, int bday, int bmonth, int byear){
+   int age = cyear - byear;
+    if (bmonth > cmonth || (bmonth == cmonth && bday > cday)) {
+        age--;
+    }
+    return age;
+}
+
+void printAge (int age){
+    printf("\nAge is %d years old\n", age);
+}
+
+int main () {
+    int cday, cmonth, cyear;
+    int bday, bmonth, byear;
+    int age;
+    
+    inputDate(&cday, &cmonth, &cyear, &bday, &bmonth, &byear);
+    age = calcAge(cday, cmonth, cyear, bday, bmonth, byear);
+    printAge(age);
+    
+    return 0;
+}
